@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+    <div class="container">
+        <div class="header">
+            <h1 class="app-title">Weather App</h1>
+            <button class="theme-toggle" id="themeToggle">
+                <div class="toggle-circle"></div>
+            </button>
+        </div>
+        
+        <div class="search-section">
+            <input type="text" class="search-input" id="cityInput" placeholder="Search snowy places...">
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        
+        <div class="snowy-places">
+            <h3 class="section-title">Top Snow Destinations</h3>
+            <div class="places-container">
+                <button class="place-btn" data-city="Gulmarg"><i class="fas fa-mountain"></i> Gulmarg</button>
+                <button class="place-btn" data-city="Manali"><i class="fas fa-skiing"></i> Manali</button>
+                <button class="place-btn" data-city="Auli"><i class="fas fa-snowboarding"></i> Auli</button>
+                <button class="place-btn" data-city="Shimla"><i class="fas fa-igloo"></i> Shimla</button>
+                <button class="place-btn" data-city="Sonamarg"><i class="fas fa-hiking"></i> Sonamarg</button>
+                <button class="place-btn" data-city="Munsiyari"><i class="fas fa-tree"></i> Munsiyari</button>
+                
+            </div>
+        </div>
+        
+        <div class="weather-display">
+            <div class="animation-container" id="animationContainer">
+                <div class="sun-moon" id="sunMoon"></div>
+                <div class="rain" id="rainEffect"></div>
+                <div class="snow" id="snowEffect"></div>
+                <div class="wind" id="windEffect"></div>
+                <div class="fog" id="fogEffect"></div>
+            </div>
+            
+            <h2 class="city-name" id="cityName">Gulmarg</h2>
+            <p class="current-date" id="currentDate">Monday, June 12, 2023</p>
+            
+            <div class="weather-icon" id="weatherIcon">
+                <i class="fas fa-snowflake"></i>
+            </div>
+            
+            <div class="temperature" id="temperature">-5</div>
+            <div class="weather-condition" id="weatherCondition">Snowing</div>
+            
+            <div class="weather-details">
+                <div class="detail-item">
+                    <i class="fas fa-wind"></i>
+                    <div class="detail-value" id="windSpeed">12 km/h</div>
+                    <div class="detail-label">Wind</div>
+                </div>
+                
+                <div class="detail-item">
+                    <i class="fas fa-tint"></i>
+                    <div class="detail-value" id="humidity">85%</div>
+                    <div class="detail-label">Humidity</div>
+                </div>
+                
+                <div class="detail-item">
+                    <i class="fas fa-compress-alt"></i>
+                    <div class="detail-value" id="pressure">920 hPa</div>
+                    <div class="detail-label">Pressure</div>
+                </div>
+            </div>
+            
+            <div class="error-message" id="errorMessage">
+                Location not found. Please try again.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-wrapper">
+    <div class="container"> <!-- your weather app container --> </div>
+
+    <div class="credit-box">
+        <p class="credit-text">
+            Developed & Maintained by<br>
+            <span class="author-name">LAXMI NARASIMHA REDDY</span><br>
+            <span class="glow-text">💡 built for the stars ✨</span>
+        </p>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
